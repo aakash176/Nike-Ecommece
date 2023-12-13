@@ -9,7 +9,7 @@ const PopularProducts = () => {
         <h2 className="text-8xl max-sm:text-4xl font-bold font-palanquin">
           Our <span className="text-coral-red">Popular </span> Products
         </h2>
-        <p className='font-palanquin lg:max-w-lg justify-center'>
+        <p className='font-palanquin lg:w-full justify-center text-slate-gray mb-3 '>
           Experience top-notch quality and style with our sought-after
           selections. Discover a world of comfort, design, and value
         </p>
