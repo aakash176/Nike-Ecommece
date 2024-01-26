@@ -2,10 +2,16 @@ import {headerLogo} from '../assets/images'
 import {navLinks} from '../constants/index'
 import {hamburger} from '../assets/icons'
 import { useState } from 'react'
+import { SignOutButton, useUser } from '@clerk/clerk-react'
 const Nav = () => {
     const [hamClicked, setHamClicked] = useState(false)
+    const user = useUser()
+    if(user){
+      
+    }
+    console.log(user)
   return (
-    <header className="padding-x py-8 fixed w-full z-10">
+    <header className="padding-x py-8 w-full z-10">
       <nav className="flex justify-between items-center max-container">
         <a href="/">
           <img
@@ -31,6 +37,10 @@ const Nav = () => {
             </li>
           ))}
         </ul>
+        <div className='text-white bg-coral-red text-sm p-3 rounded-full '>
+        <SignOutButton />
+
+        </div>
         <div className="hidden max-lg:block cursor-pointer">
           <img
             width={25}
